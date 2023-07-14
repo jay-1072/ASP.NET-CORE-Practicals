@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h4>Test The Exception Handling</h4>
+    <hr />
+    <a class="btn btn-danger" asp-action="BadRequestEx" asp-controller="Home">BadRequest Example</a>
+    <a class="btn btn-danger" asp-action="UnAuthorizeError" asp-controller="Home">Authorization Error</a>
+    <a class="btn btn-danger" asp-action="NotFoundExample" asp-controller="Home">Not Found Example</a>
+    <a class="btn btn-danger" asp-action="AmbiguityExample" asp-controller="Home">Ambiguous Example</a>
+    <a class="btn btn-danger" asp-action="LoopEx" asp-controller="Home">Loop Example</a>
+    <a class="btn btn-danger" asp-action="InternalServerErrorEx" asp-controller="Home">Internal Sever Error Example</a>
+</div>
+
+<br />
+
+<div>
+    <h4>Test The Generic repository CRUD</h4>
+    <hr />
+    <a asp-action="Index" asp-controller="Student" class="btn btn-outline-primary"> Students</a>
+    <a asp-action="Index" asp-controller="User" class="btn btn-outline-primary"> User</a>
+</div>
